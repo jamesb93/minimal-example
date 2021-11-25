@@ -1,15 +1,14 @@
 <script>
-    import { createEventDispatcher } from 'svelte';
-    export let label = 'button';
+	import { createEventDispatcher } from 'svelte';
+	export let label = 'button';
 
-    const dispatch = createEventDispatcher();
+	const dispatch = createEventDispatcher();
 
-    function doStuff() {
-        dispatch('click')
-    }
-
+	function doStuff() {
+		dispatch('click');
+	}
 </script>
 
-<button class='btn' on:click={ doStuff }>
-    { label }
+<button class="btn" on:click={doStuff}>
+	{label}
 </button>
